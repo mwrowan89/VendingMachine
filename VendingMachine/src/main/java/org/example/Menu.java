@@ -37,7 +37,7 @@ public class Menu {
             System.out.println("(2) Purchase");
             System.out.println("(3) Exit");
 
-            System.out.print("Please enter 1, 2, or 3: ");
+            System.out.print("Selection: ");
             action = userInput.nextLine();
 
             if(action.equalsIgnoreCase("1")){
@@ -97,6 +97,8 @@ public class Menu {
             System.out.println("(1) Feed Money");
             System.out.println("(2) Select Product");
             System.out.println("(3) Finish Transaction");
+            System.out.print("Selection: ");
+
             selection = userInput.nextLine();
 
             if(selection.equalsIgnoreCase("1")){
@@ -107,6 +109,8 @@ public class Menu {
                     System.out.println("(1) $1.00");
                     System.out.println("(2) $5.00");
                     System.out.println("(3) $10.00");
+                    System.out.print("Selection: ");
+
                     String dollarAmount = userInput.nextLine();
                     double amount = 0.00;
                     if (dollarAmount.equalsIgnoreCase("1")) {
